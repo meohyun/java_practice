@@ -1,23 +1,23 @@
 import java.util.Scanner;
 
-public class dd {
+public class Time {
 	public static void main(String[] args) {
 		int iTime;
 		int iSecond;
 		int iMinute;
 		int iHour;
 		Scanner in = new Scanner(System.in);
-		System.out.print("Á¤¼ö¸¦ ÀÔ·ÂÇÏ¼¼¿ä:");
+		System.out.print("ì •ìˆ˜ë¥¼ ìž…ë ¥í•˜ì„¸ìš”:");
 		
 		iTime = in.nextInt();
 		iSecond = iTime % 60;
 		iMinute = (iTime / 60) % 60;
 		iHour = (iTime/60)/60;
 		
-		System.out.print(iTime + "ÃÊ´Â" );
-		System.out.print(iHour + "½Ã°£" );
-		System.out.print(iMinute + "ºÐ" );
-		System.out.print(iSecond + "ÃÊÀÔ´Ï´Ù." );
+		System.out.print(iTime + "ì´ˆëŠ”" );
+		System.out.print(iHour + "ì‹œê°„" );
+		System.out.print(iMinute + "ë¶„" );
+		System.out.print(iSecond + "ì´ˆìž…ë‹ˆë‹¤." );
 	
 	}
 }
