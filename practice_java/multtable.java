@@ -1,5 +1,11 @@
 
+// 숫자 나열 하는 프로그램 
 
+// ex) 
+// 1
+// 2 4
+// 3 6 9
+// 4 8 12
 public class multtable{
 	
 	public static void printMultTable(int h) {
