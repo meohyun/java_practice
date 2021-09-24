@@ -1,5 +1,6 @@
 import java.util.Scanner;
 
+// '*' 으로 이루어진 직사각형 출력
 public class rectangle{
 	public static void main(String[] args) {
 		int h;
