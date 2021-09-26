@@ -15,10 +15,10 @@ public class rectangle{
 		}
 		
 		if (h > 0) {
-			char[][] strArray = new char[h][h+(h-1)];
+			char[][] strArray = new char[h][2h-1];
 	
 			for (int i =0; i<h;i++) {
-				for	(int j =0; j <h+(h-1);j++) {
+				for	(int j =0; j <2h-1;j++) {
 					if (i < j && j < h+(h-1)-(i+1))
 						strArray[i][j] = 0;
 					else
