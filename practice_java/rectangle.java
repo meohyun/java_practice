@@ -16,15 +16,13 @@ public class rectangle{
 		
 		if (h > 0) {
 			char[][] strArray = new char[h][h+(h-1)];
-			char[] strAr = new char[h];
 	
 			for (int i =0; i<h;i++) {
-				strAr[i] = c;
 				for	(int j =0; j <h+(h-1);j++) {
 					if (i < j && j < h+(h-1)-(i+1))
 						strArray[i][j] = 0;
 					else
-						strArray[i][j] = strAr[i];
+						strArray[i][j] = c;
 					System.out.print(strArray[i][j]+" ");
 				}
 				System.out.println();
