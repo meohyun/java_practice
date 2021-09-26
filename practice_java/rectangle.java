@@ -1,6 +1,5 @@
 import java.util.Scanner;
 
-// '*' 으로 이루어진 직사각형 출력
 public class rectangle{
 	public static void main(String[] args) {
 		int h;
@@ -15,11 +14,10 @@ public class rectangle{
 		}
 		
 		if (h > 0) {
-			char[][] strArray = new char[h][2h-1];
-	
+			char[][] strArray = new char[h][2*h-1];
 			for (int i =0; i<h;i++) {
-				for	(int j =0; j <2h-1;j++) {
-					if (i < j && j < h+(h-1)-(i+1))
+				for	(int j =0; j <(2*h-1);j++) {
+					if (i < j && j < (2*h-1)-(i+1))
 						strArray[i][j] = 0;
 					else
 						strArray[i][j] = c;
