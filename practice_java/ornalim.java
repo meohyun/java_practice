@@ -1,37 +1,31 @@
 import java.util.Scanner;
 
-public class ornalim{
+public class daehyun{
 	
 	public static void sort(int[] array) {
-		int max = 0;
 		Scanner sc = new Scanner(System.in);
-		System.out.println("Á¤¼ö¸¦ ÀÔ·ÂÇÏ¼¼¿ä.");
+		System.out.println("ì •ìˆ˜ë¥¼ ìž…ë ¥í•˜ì„¸ìš”");
 		
-		
-		for (int i = 0; i < array.length-1;i++) {
-			System.out.print((i+1)+"¹øÂ° Á¤¼ö: ");
+		for (int i =0;i <array.length;i++) {
+			System.out.print((i+1)+"ë²ˆì§¸ ì •ìˆ˜: ");
 			int n = sc.nextInt();
 			array[i] = n;
 			for (int j = 1; j < array.length;j++) {
-				if (max < array[i]) 
-					max = array[i];		
-					array[array.length-1] = max;		
-					array[j] = array[i];		
-			}	
+				if (array[i] < array[j]) {
+					int temp = array[i];
+					array[i] = array[j];
+					array[j] = temp;
+				}
+			}
 		}
-			
 		
-		for (int a = 0; a< array.length;a++) {
-			System.out.print(array[a]+" ");	
-		}	
-			
-		
+		for (int a=0; a< array.length; a++) {
+			System.out.print(array[a]+" ");
+
+		}
 	}
-		
-	
-	public static void main(String[] args){
-		int[] ten_array = {0,0,0,0,0,0,0,0,0,0};
-		sort(ten_array);
-		}
-	
+	public static void main(String[] args) {
+		int[] my_array = {0,0,0,0,0,0,0,0,0,0};
+		sort(my_array);
+	}
 }
