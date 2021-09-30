@@ -43,21 +43,21 @@ class Rectangle{
 			System.out.println("("+x1+","+y2+")");
 			System.out.println("("+x2+","+y1+")");
 			System.out.println("("+x2+","+y2+")");
-			System.out.println("³ĞÀÌ: "+ area);
+			System.out.println("ë„“ì´: "+ area);
 	
 	}
 		else
-			System.out.println("Ãâ·ÂºÒ°¡");
+			System.out.println("ì¶œë ¥ë¶ˆê°€");
 			
 			
 	}
 	
 	boolean equals(Rectangle r) {
-		if (area != r.area) 
+		if (this.area != r.area) 
 			return false;
-		else if (width != r.width)
+		else if (this.width != r.width)
 			return false;
-		else if (height != r.height)
+		else if (this.height != r.height)
 			return false;
 		else
 			return true;
@@ -79,6 +79,6 @@ public class RectTest extends Rectangle{
 		r.show();
 		System.out.println(r.square());
 		if(r.equals(s))
-			System.out.println("µÎ »ç°¢ÇüÀº °°½À´Ï´Ù.");
+			System.out.println("ë‘ ì‚¬ê°í˜•ì€ ê°™ìŠµë‹ˆë‹¤.");
 	}
 }
