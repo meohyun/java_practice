@@ -32,17 +32,17 @@ class Rectangle{
 	}
 	
 	int square() {
-		if (Math.abs(y1-y2) != Math.abs(x1-x2))
+		if (check())
 			return Math.abs(y1-y2)*Math.abs(x1-x2) ;
 		else
 			return 0;
 	}
 	void show() {
-		if (Math.abs(y1-y2) != Math.abs(x1-x2)) {
-			System.out.println("("+x1+","+y1+")");
-			System.out.println("("+x1+","+y2+")");
-			System.out.println("("+x2+","+y1+")");
-			System.out.println("("+x2+","+y2+")");
+		if (check()) {
+			System.out.print("("+x1+","+y1+")"+" ");
+			System.out.print("("+x1+","+y2+")"+" ");
+			System.out.print("("+x2+","+y1+")"+" ");
+			System.out.print("("+x2+","+y2+")"+" ");
 			System.out.println("넓이: "+ area);
 	
 	}
