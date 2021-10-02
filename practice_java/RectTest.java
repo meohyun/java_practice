@@ -16,12 +16,6 @@ class Rectangle{
 		this.y2 = y2;
 		
 	}
-	// width, height ,area 필드 정의
-	void set2(int x1, int y1, int x2, int y2) {
-		this.width = Math.abs(x1-x2);
-		this.height = Math.abs(y1-y2);
-		this.area = height * width;
-	}
 	
 	void set(int x1,int y1,int x2,int y2) {
 		this.x1 = x1;
@@ -30,6 +24,15 @@ class Rectangle{
 		this.y2 = y2;
 		
 	}
+	
+	// width, height ,area 필드 정의
+	void set2(int x1, int y1, int x2, int y2) {
+		this.width = Math.abs(x1-x2);
+		this.height = Math.abs(y1-y2);
+		this.area = height * width;
+	}
+	
+
 	
 	boolean check() {
 	
