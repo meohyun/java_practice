@@ -68,7 +68,8 @@ class Rectangle{
 
 		if (this.area == r.area && this.width == r.width && this.height == r.height ) 
 			return true;
-		
+		else if (this.area == r.area && this.width == r.height && this.height == r.width)
+			return true;
 		else
 			return false;
 			
@@ -89,13 +90,15 @@ public class RectTest extends Rectangle{
 		r.show();
 		s.show();
 		System.out.println(s.square());
-		r.set(-2,2,-1,4);
-		r.set2(-2, 2, -1, 4);
+		r.set(2,-2,1,4);
+		r.set2(2, -2, 1, 4);
 		
 		
 		r.show();
 		System.out.println(r.square());
 		if(r.equals(s))
 			System.out.println("두 사각형은 같습니다.");
+		else
+			System.out.println("두 사각형은 다릅니다.");
 	}
 }
