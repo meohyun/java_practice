@@ -33,7 +33,7 @@ class Rectangle{
 	
 	boolean check() {
 	
-		if (Math.abs(y1-y2) != Math.abs(x1-x2)) 
+		if (height != width) 
 			return true;
 		else
 			return false;
@@ -41,7 +41,7 @@ class Rectangle{
 	
 	int square() {
 		if (check())
-			return Math.abs(y1-y2)*Math.abs(x1-x2) ;
+			return area ;
 		else
 			return 0;
 	}
@@ -52,7 +52,7 @@ class Rectangle{
 			System.out.print("("+x1+","+y2+")"+" ");
 			System.out.print("("+x2+","+y1+")"+" ");
 			System.out.print("("+x2+","+y2+")"+" ");
-			System.out.println("넓이: "+ Math.abs(y1-y2)*Math.abs(x1-x2));
+			System.out.println("넓이: "+ area);
 	
 	}
 		else
