@@ -1,9 +1,9 @@
 class Rectangle{
 	
 	int x1,y1,x2,y2;
-	int width = Math.abs(x1-x2); // 가로길이는 음수면 안되므로 절댓값
-	int height = Math.abs(y1-y2); // 세로길이도 음수면 안되므로 절댓값
-	int area = height * width;
+	int width; // 가로길이는 음수면 안되므로 절댓값
+	int height; // 세로길이도 음수면 안되므로 절댓값
+	int area;
 	
 	// 매개변수가 없는 생성자
 	Rectangle(){
