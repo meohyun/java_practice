@@ -1,8 +1,8 @@
 class Rectangle{
 	
 	int x1,y1,x2,y2;
-	int width; // 가로길이는 음수면 안되므로 절댓값
-	int height; // 세로길이도 음수면 안되므로 절댓값
+	int width; 
+	int height;
 	int area;
 	
 	// 매개변수가 없는 생성자
@@ -30,8 +30,8 @@ class Rectangle{
 	
 	// width, height ,area 필드 정의
 	void set2(int x1, int y1, int x2, int y2) {
-		this.width = Math.abs(x1-x2);
-		this.height = Math.abs(y1-y2);
+		this.width = Math.abs(x1-x2); // 가로길이는 음수면 안되므로 절댓값
+		this.height = Math.abs(y1-y2);  // 세로길이도 음수면 안되므로 절댓값
 		this.area = height * width;
 	}
 	
