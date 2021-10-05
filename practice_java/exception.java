@@ -1,5 +1,5 @@
-// ¿À·ù 
-// ¿¹¿Ü(exception) -> º¹±¸ °¡´ÉÇÑ ´ú ½É°¢ÇÑ ¿À·ù
+// ì˜¤ë¥˜ 
+// ì˜ˆì™¸(exception) -> ë³µêµ¬ ê°€ëŠ¥í•œ ëœ ì‹¬ê°í•œ ì˜¤ë¥˜
 
 // TRY-CATCH
 
@@ -18,5 +18,24 @@ public class exception{
 			System.out.println("Program ended(1)");
 		}
 		System.out.println("Program ended(2)");
+	}
+}
+
+// ì˜ˆì™¸ ë°œìƒ throw ë¬¸ ì´ìš©
+import java.util.Scanner;
+
+public class exception{
+	public static void getNumber() {
+		Scanner in = new Scanner(System.in);
+		int iNum = in.nextInt();
+		try {
+			if((iNum%2)==0) throw new EvenException("EVEN!");
+			}
+		catch(EvenException e) {
+			System.out.println(e.getMessage());
+		}
+	}
+	public static void main(String[] args) {
+		getNumber();
 	}
 }
