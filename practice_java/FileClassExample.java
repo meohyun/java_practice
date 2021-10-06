@@ -7,13 +7,13 @@ public class FileClassExample{
 			File f = new File(fd,s);
 			long t = f.lastModified();
 			System.out.print(s);
-			System.out.print("\tÆÄÀÏ Å©±â " + f.length());
-			System.out.printf("\t¼öÁ¤ÇÑ ½Ã°£ : %tb %td %ta %tT\n",t,t,t,t);
+			System.out.print("\tÃ†Ã„Ã€Ã Ã…Â©Â±Ã¢ " + f.length());
+			System.out.printf("\tÂ¼Ã¶ÃÂ¤Ã‡Ã‘ Â½ÃƒÂ°Â£ : %tb %td %ta %tT\n",t,t,t,t);
 		}
 	}
 	
 	public static void main(String[] args) {
-		File f1 = new File("C:\\Users\\first plant\\eclipse-workspace\\daehyun\\src");
+		File f1 = new File("íŒŒì¼ê²½ë¡œ");
 		dir(f1);
 	}
 }
