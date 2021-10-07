@@ -1,15 +1,19 @@
 
 public class EmployeeTest {
 	Employee e1,e2,e3;
+	Manager m1,m2,m3;
 	public EmployeeTest() {
-		e1 = new Employee("¾ÆÀÌÀ¯",30000000,"kd039482");
-		e2 = new Employee("¿¡ÀÏ¸®",35000000,"ek827593");
+		e1 = new Employee("ì•„ì´ìœ ",30000000,"kd039482");
+		e2 = new Employee("ì—ì¼ë¦¬",35000000,"ek827593");
 		e3 = new Employee();
+		m1 = new Manager("ê¹€ê±´ëª¨",70000000,"lg837593","ì¸ì‚¬ë¶€");
+		m2 = new Manager("ì„œíƒœì§€",60000000,"je934827","ê´€ë¦¬ë¶€");
+		m3 = new Manager();
 	}
 	public void showinfo() {
-		String info = "ÀÌ¸§\t¿ù±Ş\t»ç¹ø\t\t°ü¸®ºÎ¼­\n";
+		String info = "ì´ë¦„\tì›”ê¸‰\t\tì‚¬ë²ˆ\t\tê´€ë¦¬ë¶€ì„œ\n";
 		info += "===============================================\n";
-		info += e1 + "\n" + e2 + "\n" + e3 + "\n";
+		info += e1 + "\n" + e2 + "\n" + e3 + "\n" + m1 + "\n" + m2 + "\n" +m3;
 		System.out.println(info);
 	}
 	public static void main(String args[]) {
