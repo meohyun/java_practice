@@ -1,6 +1,8 @@
 public class Manager extends Employee{
 	private String department;
-
+	
+	Employee e = new Employee();
+	int salary = e.get();
 	
 	Manager(){
 		this.department = "";
