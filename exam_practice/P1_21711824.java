@@ -1,30 +1,24 @@
+import java.util.Scanner;
 
 public class P1_21711824 {
 	public static void main(String[] args) {
-		double sum = 0;
-		double nums = 0;
-		double avg = 0;
-		double d = 0 ;
-		double v = 0 ;
-		double ans = 0;
-		for (int i=0;i<1000;i++) {
-			if (i % 3 == 0) {
-				// 합
-				sum += i;
-				// 3의배수 갯수
-				nums += 1;
-				avg = sum/nums;
-				
-				d += Math.pow(i-avg, 2);
-				// 분산
-				v = d / nums;
-				
-				// 표준편차
-				ans = Math.sqrt(v);
+		int sum = 0;
+		Scanner sc = new Scanner(System.in);
+		
+		for (int i=0;i<10;i++) {
+			System.out.print("정수를 입력하세요: ");
+			int n = sc.nextInt();
+			
+			// 홀수일 경우 더하기
+			if (n % 2 != 0) {
+				sum += n;
 			}
+			// 짝수일 경우 빼기
+			else 
+				sum -= n;
 		}
-		System.out.println(sum);
-		System.out.println(avg);
-		System.out.println(ans);
+		System.out.println("합은 "+sum+"입니다.");
+
 	}
+	
 }
